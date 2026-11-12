@@ -46,7 +46,8 @@ The core package is `qmodem`. The pure-JavaScript `luci-app-qmodem-next` is the 
 Add the feed to `feeds.conf.default` in an OpenWrt source tree:
 
 ```text
-src-git qmodem https://github.com/BootLoopLover/fujrQmodem.git;main
+echo >> feeds.conf.default
+echo 'src-git qmodem https://github.com/BootLoopLover/fujrQmodem.git;main' >> feeds.conf.default
 ```
 
 Then run:
