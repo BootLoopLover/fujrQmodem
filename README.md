@@ -53,9 +53,8 @@ echo 'src-git qmodem https://github.com/BootLoopLover/fujrQmodem.git;main' >> fe
 Then run:
 
 ```sh
-./scripts/feeds update qmodem
-./scripts/feeds install -a -p qmodem
-make menuconfig
+./scripts/feeds update -a
+./scripts/feeds install -a
 ```
 
 Select `luci-app-qmodem-next` under `LuCI -> Applications`. The target firmware must also contain USB, serial, QMI, MBIM, or MHI drivers matching the modem, protocol, kernel, and hardware topology.
